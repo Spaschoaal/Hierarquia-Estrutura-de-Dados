@@ -163,4 +163,92 @@ if __name__ == "__main__":
         elif escolha == "9":
             calculadora.tipo_das_matrizes()
 
+#TesteFuncionamento:
+Menu:
+1. Adicionar matriz
+2. Adicionar matriz identidade
+3. Remover matriz
+4. Imprimir matrizes
+5. Somar matrizes
+6. Subtrair matrizes
+7. Multiplicar matriz por escalar
+8. Multiplicar matrizes
+9. Tipo da Matriz
+0. Sair
+Escolha uma opção: 1
+Nome da matriz: A
+Digite as dimensões da matriz (linhas colunas): 3 3
+Digite os elementos da linha 1: 35 10 1
+Digite os elementos da linha 2: 69 120 5
+Digite os elementos da linha 3: 4 69 10
+
+Menu:
+1. Adicionar matriz
+2. Adicionar matriz identidade
+3. Remover matriz
+4. Imprimir matrizes
+5. Somar matrizes
+6. Subtrair matrizes
+7. Multiplicar matriz por escalar
+8. Multiplicar matrizes
+9. Tipo da Matriz
+0. Sair
+Escolha uma opção: 1
+Nome da matriz: B
+Digite as dimensões da matriz (linhas colunas): 3 3
+Digite os elementos da linha 1: 12 92 3
+Digite os elementos da linha 2: 34 10 2
+Digite os elementos da linha 3: 123 169 1
+
+Menu:
+1. Adicionar matriz
+2. Adicionar matriz identidade
+3. Remover matriz
+4. Imprimir matrizes
+5. Somar matrizes
+6. Subtrair matrizes
+7. Multiplicar matriz por escalar
+8. Multiplicar matrizes
+9. Tipo da Matriz
+0. Sair
+Escolha uma opção: 5
+Nome da primeira matriz: A
+Nome da segunda matriz: B
+
+Menu:
+1. Adicionar matriz
+2. Adicionar matriz identidade
+3. Remover matriz
+4. Imprimir matrizes
+5. Somar matrizes
+6. Subtrair matrizes
+7. Multiplicar matriz por escalar
+8. Multiplicar matrizes
+9. Tipo da Matriz
+0. Sair
+Escolha uma opção: 4
+Matriz A:
+35.0 10.0 1.0
+69.0 120.0 5.0
+4.0 69.0 10.0
+Matriz B:
+12.0 92.0 3.0
+34.0 10.0 2.0
+123.0 169.0 1.0
+Matriz A + B:
+47.0 102.0 4.0
+103.0 130.0 7.0
+127.0 238.0 11.0
+
+Menu:
+1. Adicionar matriz
+2. Adicionar matriz identidade
+3. Remover matriz
+4. Imprimir matrizes
+5. Somar matrizes
+6. Subtrair matrizes
+7. Multiplicar matriz por escalar
+8. Multiplicar matrizes
+9. Tipo da Matriz
+0. Sair
 
