@@ -139,3 +139,126 @@ if __name__ == "__main__":
 
         else:
             print("Opção inválida. Tente novamente.")
+
+
+#TesteFuncionamento:
+Digite o seu nome para obter informações sobre a fila: Ana
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Matheus
+Matheus foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Sofia
+Sofia foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: João
+João foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Felipe
+Felipe foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Maria
+Maria foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Helena
+Helena foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 1
+Digite o nome da pessoa: Clara
+Clara foi adicionado(a) à fila.
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 2
+Tempo de espera estimado: 40 minutos.
+Deseja entrar na fila?Sim
+Você foi adicionado(a) à fila. Tempo de espera atualizado: 40.00 minutos, Hora de entrada: 16:54:41, Hora prevista de atendimento: 17:30:24, Hora atual: 16:55:24
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 3
+Alguém foi atendido. Tempo de espera atualizado: 35.00 minutos, Hora de entrada: 16:54:41, Hora prevista de atendimento: 17:25:29
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 4
+Digite o nome da pessoa que desistiu: Helena
+Alguém desistiu da fila. Tempo de espera atualizado: 30.00 minutos, Hora de entrada: 16:54:41, Hora prevista de atendimento: 17:20:36
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 5
+Digite o tempo de atraso em minutos: 5
+O atendimento foi atrasado em 5 minutos.Tempo de espera atualizado: 60.00 minutos, Hora de entrada: 16:54:41, Hora prevista de atendimento: 17:20:46
+
+1 - Adicionar pessoa à fila
+2 - Calcular tempo de espera
+3 - Atender próxima pessoa
+4 - Desistir de uma pessoa
+5 - Atrasar atendimento
+6 - Sair
+Escolha uma opção: 6
+Saindo do programa.
+
