@@ -51,8 +51,6 @@ class DoublyLinkedList:
         else:
             return None
 
-#Moficar um elemento já existente. *lista [3] = 7*
-
 #Buscador de elementos e retornando a posição. *lista.search(56)*
     def search(self, elemento):
         ponteiro = self.head
@@ -97,6 +95,80 @@ class DoublyLinkedList:
         else:
             return None
 
+# Adicionando a troca dr duas posições sucessivas (swap)
+def swap(self, pos):
+    if pos < 0 or pos >= self.size - 1:
+        print("Posição inválida para a operação de swap.")
+        return
+
+    ponteiro1 = self.get_node_at(pos)
+    ponteiro2 = ponteiro1.next
+
+    #Atualizando os nós adjacentes
+    ponteiro1.prev.next = ponteiro2
+    ponteiro2.next.prev = ponteiro1
+
+    #Atualizando os ponteiros de ponteiro1
+    ponteiro1.next = ponteiro2.next
+    ponteiro1.prev = ponteiro2
+
+    #Atualizando os ponteiros de ponteiro2
+    ponteiro2.next = ponteiro1
+    ponteiro2.prev = ponteiro1.prev
+
+    #Atualizando o ponteiro anterior a ponteiro1
+    if ponteiro1.next:
+        ponteiro1.next.prev = ponteiro1
+
+    #Atualizando o ponteiro seguinte a ponteiro2
+    if ponteiro2.prev:
+        ponteiro2.prev.next = ponteiro2
+
+#Algoritmo de ordenação Bubble Sort
+def bubble_sort(self):
+    for i in range(self.size):
+        for j in range(0, self.size - i - 1):
+            node1 = self.get_node_at(j)
+            node2 = node1.next
+
+            # Comparando os elementos e trocando se necessário
+            if node1.data > node2.data:
+                temp = node1.data
+                node1.data = node2.data
+                node2.data = temp
+
+# Função auxiliar para obter o nó em uma posição específica
+def get_node_at(self, pos):
+    if 0 <= pos < self.size:
+        ponteiro = self.head
+        for i in range(pos):
+            ponteiro = ponteiro.next
+        return ponteiro
+    else:
+        return None
+
+DoublyLinkedList.swap = swap
+DoublyLinkedList.bubble_sort = bubble_sort
+DoublyLinkedList.get_node_at = get_node_at
+
+#Exemplo de uso
+lista=DoublyLinkedList()
+lista.append(3)
+lista.append(1)        
+lista.append(4)
+lista.append(1)
+lista.append(5)
+print("Antes do swap:")
+print(list(lista))
+lista.swap(2) #Troca os elementos nas posições 2 e 3
+print("Depois do swap:")
+print(list(lista))
+lista.bubble_sort() #Ordena a lista com o Bubble Sort
+print("Depois do Bubble Sort:")
+print(list(lista))
+
+
+#Exemplo de Uso
 lista = DoublyLinkedList()
 lista.append(7)
 lista.append(8)
@@ -130,62 +202,16 @@ len(lista)
 lista[0]
 lista.search(8)
 
-# Troca de duas posições sucessivas (swap)
-def swap(self, pos):
-    if pos < 0 or pos >= self.size - 1:
-        print("Posição inválida para a operação de swap.")
-        return
-
-    ponteiro1 = self.get_node_at(pos)
-    ponteiro2 = ponteiro1.next
-
-    # Atualizando os nós adjacentes
-    ponteiro1.prev.next = ponteiro2
-    ponteiro2.next.prev = ponteiro1
-
-    # Atualizando os ponteiros de ponteiro1
-    ponteiro1.next = ponteiro2.next
-    ponteiro1.prev = ponteiro2
-
-    # Atualizando os ponteiros de ponteiro2
-    ponteiro2.next = ponteiro1
-    ponteiro2.prev = ponteiro1.prev
-
-    # Atualizando o ponteiro anterior a ponteiro1
-    if ponteiro1.next:
-        ponteiro1.next.prev = ponteiro1
-
-    # Atualizando o ponteiro seguinte a ponteiro2
-    if ponteiro2.prev:
-        ponteiro2.prev.next = ponteiro2
-
-# Algoritmo de ordenação Bubble Sort
-def bubble_sort(self):
-    for i in range(self.size):
-        for j in range(0, self.size - i - 1):
-            node1 = self.get_node_at(j)
-            node2 = node1.next
-
-            # Comparando os elementos e trocando se necessário
-            if node1.data > node2.data:
-                temp = node1.data
-                node1.data = node2.data
-                node2.data = temp
-
-# Função auxiliar para obter o nó em uma posição específica
-def get_node_at(self, pos):
-    if 0 <= pos < self.size:
-        ponteiro = self.head
-        for i in range(pos):
-            ponteiro = ponteiro.next
-        return ponteiro
-    else:
-        return None
-
-# Adicione as novas funções à classe DoublyLinkedList
-DoublyLinkedList.swap = swap
-DoublyLinkedList.bubble_sort = bubble_sort
-DoublyLinkedList.get_node_at = get_node_at
-
-#Funcionamento
+#TesteFuncionamento
+#Lista original: [7, 8, 9, 80]
+#Adicionando no inicio: [5, 7, 8, 9, 80]
+#Adicionando no final: [5, 7, 8, 9, 80, 2]
+#Tamanho da lista: 6
+#Primeiro elemento da lista: 5
+#O número 8 está na posição: 2
+#Removido do início: 5
+#Resultado: [5, 7, 8, 9, 80]
+#Removido do final: 2
+#Resultado: [5, 7, 8, 9]
+#1
 
